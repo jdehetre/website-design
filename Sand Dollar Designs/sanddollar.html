@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Sand Dollar Designs</title>
+	<meta charset="utf-8">
+	
+	<!--Bootstrap 4 links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	
+	<!--Slideshow Style Link-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<!--Original JS link-->
+	<script src="script/sanddollar.js"></script>
+	
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+	
+	<!--Original CSS link-->
+	<link rel="stylesheet" href="style/sanddollar.css">
+	
+	<!--Logo in the Tab-->
+	<link rel="icon" href="images/sanddollar.png">
+	
+</head>
+
+<body>
+
+<header id="masthead" class="site-header">
+
+	<div class="row">
+	<div class="col-sm-12">
+	<nav id="site-navigation" class="navbar fixed-top main-navigation navbar navbar-default navbar-expand-sm">
+
+	<a href="sanddollar.html"><img src="images/sanddollar.png" height="50" width="50" class="navbar-brand"></a>
+	
+	<ul class="navbar-nav">
+	<li class="nav-item"> <a class="nav-link" href="portfolio.html">Portfolio</a></li>
+	<li class="nav-item"> <a class="nav-link" href="packages.html">Packages</a></li>
+	<li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a></li>
+	<li class="nav-item"> <a class="nav-link" href="about.html">About Us</a></li>
+	</ul>
+	
+    <div id="site-navigation" class="navSearch">
+
+    <form role="search" method="get" class="search-form" action="#">
+    <label>
+    <input type="search" class="search-field" placeholder="Search" value="" name="s" />
+    </label>
+    <input type="submit" class="search-submit" value="Search" />
+    </form>
+    
+    </div>
+
+	</nav>
+	</div>
+	</div>
+
+</header>
+
+<div id="divider"> </div>
+
+<div class="row">
+<div class="col-sm-12">
+<section id="welcomeSlideshow">
+
+	<div class="slideshow-container">
+
+ 
+	<div class="welcomeSlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="images/ss1.jpg" style="width:100%">
+    <div class="text2">Sand Dollar Designs</div>
+    <div class="caption"><i>Website Development and Design Specialty</i></div>
+    <div class="link"><a href="#welcomeButton"><button type="button" class="button btn btn-light">Welcome</button></a></div>
+  	</div>
+
+  	<div class="welcomeSlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="images/ss2.jpg" style="width:100%">
+    <div class="text2">Check out our portfolio</div>
+    <div class="caption">See what websites we've already created and designed.</div>
+    <div class="link"><a href="portfolio.html"><button type="button" class="button btn btn-light">See Portfolio</button></a></div>
+  	</div>
+
+  	<div class="welcomeSlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="images/ss3.jpg" style="width:100%">
+    <div class="text2">Order packages</div>
+    <div class="caption">We offer various packages to have our service best suit your needs.</div>
+    <div class="link"><a href="packages.html"><button type="button" class="button btn btn-light">Browse</button></a></div>
+  	</div>
+  
+   	<div class="welcomeSlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/ss4.jpg" style="width:100%">
+    <div class="text2">Reach out</div>
+    <div class="caption">Contact us with one of the various ways we've provided to reach us.</div>
+    <div class="link"<a href="contact.html"><button type="button" class="button btn btn-light">Contact</button></a></div>
+  	</div>
+  
+  	<div class="welcomeSlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/ss5.jpg" style="width:100%">
+    <div class="text2">Who we are</div>
+    <div class="caption">Want to know more? Read brief bios written by the designers.</div>
+    <div class="link"><a href="about.html"><button type="button" class="button btn btn-light">About Us</button></a></div>
+  	</div>
+
+  	<a class="prev" onclick="plusSlides(-1)" style="color:white">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)" style="color:white">&#10095;</a>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+  	showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+  	showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+  	var i;
+  	var slides = document.getElementsByClassName("welcomeSlides");
+  	if (n > slides.length) {slideIndex = 1}
+  	if (n < 1) {slideIndex = slides.length}
+  	for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  	}
+  	slides[slideIndex-1].style.display = "block";
+	} 
+	
+	</script>
+	
+</section>
+</div>
+</div>
+
+<div id="divider"></div>
+
+<div id="welcomeButton"></div>
+
+<section id="bm">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-6" id="para">
+    <h1>Personal Connection</h1>
+	<p>As a small web design company, we offer a personal experience with our designers.
+	This allows for your vision and ideas to transform into a customized website that's perfect for you.
+	Sand Dollar Designs has so much to offer and we are happy to let you know what we can do.</p>
+</div>
+
+<div class="col-sm-6" id="image1">
+    <img src="images/personal.jpg" width="100%" height="auto"></img>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section id="ud">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-6" id="image2">
+	<img src="images/designs.jpg" width="100%" height="auto"></img>
+</div>
+
+<div class="col-sm-6" id="para">
+    <h1>Unique Designs</h1>
+	<p>Our designs are unique because they are not only created by us - they are also created by you.
+	Anything you desire to have included, however you want it to look, we create it. You are just as much a
+	designer as we are. Every website designed with us is created with a personal touch.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section id="bu">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-6" id="para">
+    <h1>Business Practicality</h1>
+	<p>We create for individuals and businesses. Our packages are customized for
+	businesses, but we are willing to work with you for easy pricing for a cost
+	that is best for all business needs.</p>
+</div>
+
+<div class="col-sm-6" id="image3">
+	<img src="images/businesses.jpg" width="100%" height="auto"></img>
+</div>
+
+</div>
+</div> 
+
+</section>
+
+<section id="ti">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-6" id="image3">
+	<img src="images/time.png" width="100%" height="auto"></img>
+</div>
+
+<div class="col-sm-6" id="para">
+    <h1>Timely Process</h1>
+	<p>Websites will be created and designed in a time frame that you desire.
+	The designers take pride in working efficiently and effectively. We want your
+	product to be delivered to you as soon as possible as much as you do.</p>
+</div>
+
+</div>
+</div> 
+
+</section>
+
+<div id="divider" class="spacer"> </div>
+
+<section id="info">
+
+<h1> Testimonials </h1>
+
+<div id="tests">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-4 border1">
+	<center><p>"The most friendly and efficient group of people I've worked with
+	for a service in creating my business. The website they created with me is
+	amazing and perfectly designed for what I needed."</p>
+	<p> - Alex Starr </p></center>
+</div>
+
+<div class="col-sm-4 border2">
+	<center><p>"My site is so totally dope broooooo.
+	I couldn't have asked for something more totally rad.
+	These dudes were totally wicked and awesome as well. Best kind of people."</p>
+	<p> - David Slade </p></center>
+</div>
+
+<div class="col-sm-4 border3">
+	<center><p>"This company was nothing short of perfect in helping with my website creation.
+	They were very professional and approachable, and the designers were very interactive with me
+	during the process. I will recommend them and use them again if I need a change."</p>
+	<p> - Marcus Smith </p></center>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<h1> Statistics </h1>
+
+<div id="stats">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-4 shape1">
+	<div class="rShape center" >
+    <p class="center">Stat</p>
+	</div>
+</div>
+
+<div class="col-sm-4 shape2">
+	<div class="rShape center" >
+    <p class="center">Stat</p>
+	</div>
+</div>
+
+<div class="col-sm-4 shape3">
+	<div class="rShape center" >
+    <p class="center">Stat</p>
+	</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+</body>
+
+</html>

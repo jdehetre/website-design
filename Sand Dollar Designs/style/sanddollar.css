@@ -1,0 +1,273 @@
+/* Search bar + Navigation bar CSS*/
+.site-header .search-field {
+    background-color: transparent;
+    background-image: url(../images/search.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 37px;
+    margin: 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0;
+}
+.site-header .search-field:focus {
+    background-color: #F6F6F4;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 400px;
+}
+
+.search-form
+.search-submit { 
+    display:none;
+}
+
+.navSearch {
+    float: left;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+nav {
+	background-color: #17161B;
+	margin-bottom: none;
+	max-height: 75px;
+}
+
+
+nav a {
+	color: #AFB29F;
+	margin-left: 20px;
+	opacity: .8;
+	font-weight: bold;
+	font-family: 'Dosis';
+	font-size: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+nav a:hover{
+	color: #D6D7CE;
+	opacity: 1;
+}
+
+
+body {
+	background-color: #F6F6F4;
+	margin-top: none;
+}
+
+div#divider {
+	background-color: #17161B;
+	padding: 25px;
+	border-style: solid;
+	border-width: .10px 0px 0px 0px;
+	border-color: #D6D7CE;
+}
+
+/* Welcome slideshow CSS */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: none;
+}
+
+.welcomeSlides {
+  display: none;
+}
+
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+  	font-family: 'Zapf Dingbats';
+  	font-size: 35px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.welcomeSlides img{
+	filter: brightness(90%);
+	height: 600px;
+	opacity: .8;
+}
+
+.text2 {
+  color: white;
+  font-family: 'Dosis';
+  font-size: 90px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.caption {
+  color: white;
+  font-family: 'Dosis';
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 275px;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  	font-family: 'Dosis';
+  	font-size: 20px;
+  	position: absolute;
+  	bottom: 150px;
+  	text-align: center;
+	margin-left: 46%;
+	margin-right: 45%
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Sections CSS */
+section#bm, section#ud, section#bu, section#ti{
+	margin-top: 75px;
+}
+
+div#para {
+	padding-left: 50px;
+}
+
+div#para h1 {
+	color: #AFB29F;
+  	font-size: 55px;
+  	font-family: 'Dosis';
+  	font-weight: bold;
+}
+
+div#para p {
+	color: #17161B;
+  	font-size: 20px;
+  	font-family: 'Dosis';
+}
+
+
+div#image1, div#image2, div#image3 {
+	opacity: .75;
+}
+
+div.spacer {
+	margin-top: 50px;
+}
+
+section#info {
+ 	margin: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #17161B;
+}
+
+section#info h1 {
+	padding-left: 25px;
+	padding-bottom: 15px;
+	color: #AFB29F;
+  	font-size: 55px;
+  	font-family: 'Dosis';
+  	font-weight: bold;
+}
+
+section#info p{
+ 	font-size: 19px;
+ 	font-family: 'Dosis';
+}
+
+div#tests div.border1{
+	border-bottom: dotted;
+	border-right: dotted;
+	border-width: 2px;
+	border-color: #17161B;
+	margin-bottom: 10px;
+}
+
+div#tests div.border2{
+	border-bottom: dotted;
+	border-width: 2px;
+	border-color: #17161B;
+	margin-bottom: 10px;
+}
+
+div#tests div.border3{
+	border-bottom: dotted;
+	border-left: dotted;
+	border-width: 2px;
+	border-color: #17161B;
+	margin-bottom: 10px;
+}
+
+.rShape p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.rShape{
+    width: 200px;
+    height: 200px;
+    background-color: #AFB29F;
+    -webkit-transform: rotate(45deg);
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
